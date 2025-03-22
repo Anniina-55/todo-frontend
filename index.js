@@ -1,5 +1,5 @@
 const BACKEND_ROOT_URL = 'http://localhost:3002';
-import { Todos } from "../JS/Class/Todos.js"
+import { Todos } from "./Class/Todos.js"
 
 
 const todos = new Todos(BACKEND_ROOT_URL)
