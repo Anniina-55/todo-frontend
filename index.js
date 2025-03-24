@@ -60,7 +60,7 @@ const renderLink = (taskList, id) => {
     })
 }
 
-/*const saveTask = async (task) => {
+const saveTask = async (task) => {
     try {
         const json = JSON.stringify({description: task})
         const response = await fetch(BACKEND_ROOT_URL + '/new', {
@@ -77,7 +77,6 @@ const renderLink = (taskList, id) => {
         alert("Error saving task " + error.message)
         }
 }
-*/
 
 input.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
