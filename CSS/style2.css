@@ -2,12 +2,22 @@
 left and right 0) and form (bottom 1em). Check out that styles are applied to the page.*/
 
 
-body {
-    background-color: rgba(255, 243, 249, 0.87);
-}
 h2 {
-    margin: 1em 0;
-}
+    margin: 1em 0;}
+
 form {
-    margin-bottom: 1em;
-}
+    margin-bottom: 1em;}
+
+
+/* My own styling*/
+
+body {
+    background-color: rgba(255, 243, 249, 0.87);}
+
+.list-group-item i {
+    cursor: pointer;}
+
+li {
+    background-color: rgba(245, 209, 223, 0.75)!important;
+    margin-bottom: 1px!important;
+    border: 1px solid pink !important;}

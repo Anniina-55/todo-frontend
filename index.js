@@ -27,7 +27,6 @@ const getTasks = () => {
 const renderTask = (task) => {
     const li = document.createElement('li')
     li.setAttribute('class', 'list-group-item')
-    li.setAttribute('style', 'background-color: rgba(245, 209, 223, 0.8); border: 0.5px solid pink; margin-bottom: 1.5px; font-weight: 500')
     li.setAttribute('data-key', task.getId().toString())
     //li.innerHTML = task.getText()
     renderSpan(li, task.getText())
