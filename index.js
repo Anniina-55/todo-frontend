@@ -1,5 +1,5 @@
 //const BACKEND_ROOT_URL = 'http://localhost:3002';
-const BACKEND_ROOT_URL = 'https://todo-backend-yg1e.onrender.com'
+const BACKEND_ROOT_URL = 'https://todo-backend-yg1e.onrender.com'.replace(/\/+$/, '')
 
 import { Todos } from "./Class/Todos.js"
 
