@@ -7,7 +7,7 @@ class Todos {
     #backend_url = ''
 
     constructor(url) {
-        this.#backend_url = url
+        this.#backend_url = url.replace(/\/$/, '');
     }
 
     getTasks = () => {
