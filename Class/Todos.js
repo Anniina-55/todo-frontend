@@ -46,7 +46,10 @@ class Todos {
 
     removeTask = (id) => {
         return new Promise(async(resolve, reject) => {
-            fetch(this.#backend_url + 'delete' + id, {
+            const cleanUrl = this.#backend_url.replace(/\/$/, '');
+            console.log(`Deleting task at: ${cleanUrl}/delete/${id}`);
+    
+            fetch(`${cleanUrl}/delete/${id}`, {
                 method: 'DELETE'
             })
             .then((response) => response.json())
